@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   `apellido_paterno` varchar(50) NOT NULL,
   `apellido_materno` varchar(50) NOT NULL,
   PRIMARY KEY (`rut`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
 --
 -- Volcado de datos para la tabla `alumnos`
@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `apoderados` (
   `nombre` varchar(100) NOT NULL,
   `apellido_materno` varchar(100) NOT NULL,
   `apellido_paterno` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `apoderados`
@@ -197,7 +197,7 @@ CREATE TABLE IF NOT EXISTS `matriculas` (
   `rut_alumno` int NOT NULL,
   `curso_corr` int NOT NULL,
   PRIMARY KEY (`matricula_corr`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -210,14 +210,14 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `usuario` int NOT NULL,
   `password` varchar(16) NOT NULL,
   `permiso` int NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`usuario`, `password`, `permiso`) VALUES
-(17107688, 'administrador', 0);
+(21103224, 'administrador', 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
